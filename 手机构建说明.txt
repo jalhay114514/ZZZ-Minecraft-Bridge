@@ -1,0 +1,45 @@
+ZZZ-MC Bridge v0.3.3 —— 手机在线构建版
+
+你只有 Android 也可以使用这个方案。
+
+一、准备
+1. 注册/登录 GitHub。
+2. 新建一个空的 Repository。
+3. 在 GitHub 网页端把本 ZIP 解压后的文件上传进去。
+4. 确认根目录能看到：
+   .github/
+   minecraft-mod/
+   bridge/
+   termux/
+   README_CN.md
+
+二、开始编译
+进入 GitHub 仓库：
+Actions → Build ZZZ-MC Bridge MOD → Run workflow
+
+等待构建完成。
+
+三、取出 JAR
+进入刚完成的 workflow：
+Artifacts → zzz-mc-bridge-0.3.3
+
+下载 ZIP 并解压。
+里面的 .jar 就是真正由 Fabric Loom 构建出来的 MOD。
+
+四、放进 ZL2
+把 JAR 放到 Minecraft 1.21.1 Fabric 实例的 mods 文件夹。
+同时确保安装 Fabric API。
+
+五、启动 Bridge
+Termux 进入项目目录：
+bash termux/install_and_start.sh
+
+看到：
+Listening on ws://127.0.0.1:27861/bridge
+
+再启动 ZL2 Minecraft。
+
+注意：
+- 不要把源码 ZIP 改名成 .jar。
+- GitHub Actions 负责生成真正的 JAR。
+- 本桥接器不注入或自动操作 ZZZ 客户端。

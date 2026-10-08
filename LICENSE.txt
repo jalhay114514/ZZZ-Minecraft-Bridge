@@ -1,0 +1,2 @@
+Prototype code for personal experimentation.
+No warranty. Do not use it to bypass game security, anti-cheat, or access private game data.

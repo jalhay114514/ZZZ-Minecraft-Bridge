@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "zzz-mc-bridge",
+  "version": "${version}",
+  "name": "ZZZ-MC Bridge",
+  "description": "Application-level bridge between Minecraft Java and a local Android bridge service.",
+  "authors": ["ZZZ-MC Bridge"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.zzzmcbridge.ZzzMcBridgeClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
